@@ -19,7 +19,7 @@ in a terminal
 
 in another 
 ```
-    node smtp-proxy-proto.js
+    node server.js
 ```
 
 command
