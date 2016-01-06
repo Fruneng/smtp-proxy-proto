@@ -1,6 +1,6 @@
 var SMTPServer = require('smtp-server').SMTPServer;
 
-var logger = require('./logger.js')
+var logger = require('./src/logger.js')
 
 var config = require('./config.js')
 

@@ -1,0 +1,1 @@
+require('./src/smtp-proxy-proto.js')

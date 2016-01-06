@@ -1,6 +1,6 @@
 
 var SMTPConnection  = require('smtp-connection')
-var config = require('./config.js')
+var config = require('../config.js')
 
 module.exports.login = function (auth, session, callback){
     var connection = new SMTPConnection({

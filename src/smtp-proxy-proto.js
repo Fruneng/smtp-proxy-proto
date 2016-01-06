@@ -1,8 +1,8 @@
-var SMTPServer = require('./smtp-server/smtp-server.js').SMTPServer
+var SMTPServer = require('../smtp-server/smtp-server.js').SMTPServer
 var logger = require('./logger.js')
-var config = require('./config.js')
+var config = require('../config.js')
 var upstream = require('./upstream.js')
-var MailParser = require('./mailparser/mailparser.js').MailParser
+var MailParser = require('../mailparser/mailparser.js').MailParser
 var mailcomposer = require('mailcomposer');
 
 var cryptoHandle = require('./crypto-handler.js')
