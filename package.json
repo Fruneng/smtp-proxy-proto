@@ -1,0 +1,20 @@
+{
+  "name": "lkt-smtp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "encoding": "^0.1.12",
+    "mailcomposer": "^3.0.1",
+    "mime": "^1.3.4",
+    "mimelib": "^0.2.19",
+    "smtp-connection": "^2.0.0",
+    "smtp-server": "^1.7.1",
+    "uue": "^3.0.0"
+  }
+}
