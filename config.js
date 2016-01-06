@@ -1,7 +1,8 @@
 module.exports = {
     server:{
         host: 'localhost',
-        port: 9025
+        port: 9025,
+        xMailer: 'smtp-proxy-proto',
     },
     upstream: {
         // host: 'smtp.mxhichina.com',
@@ -10,7 +11,6 @@ module.exports = {
         port: 9026,
         user: 'test@example.com',
         pass: 'test',
-        xMailer: 'smtp-proxy',
     }
 
 }

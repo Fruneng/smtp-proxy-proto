@@ -90,10 +90,12 @@ var server = new SMTPServer({
                 return callback(err);
             }
 
-            mailObject.xMailer = config.upstream.xMailer
             mailObject.headers = {}
             mailObject.headers['X-Originating-IP'] = session.remoteAddress
-
+            if (config.server.xMailer){
+                mailObject.headers['X-Mailer'] = config.server.xMailer
+            }
+            
             cryptoHandle(mailObject, function(mailObject){
                 var mail = mailcomposer(mailObject);
                 

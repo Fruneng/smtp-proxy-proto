@@ -8,18 +8,13 @@ module.exports.login = function (auth, session, callback){
         host: config.upstream.host,
     });
 
-    connection.on('error', function(error){
+    connection.once('error', function(error){
         console.log(error)
-        session._upstream.close()
-        session._upstream = null
-    })
-
-    connection.on('connect', function(){
-
-    })
-
-    connection.on('end', function(){
-        session._upstream = null
+        if (session._upstream){
+            session._upstream.close()
+            session._upstream = null
+        }
+        callback(new Error('Authentication failed'))
     })
 
     connection.connect(function(cb){
