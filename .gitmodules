@@ -1,0 +1,3 @@
+[submodule "smtp-server"]
+	path = smtp-server
+	url = https://github.com/Fruneng/smtp-server.git

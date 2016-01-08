@@ -1,4 +1,4 @@
-var SMTPServer = require('../smtp-server/smtp-server.js').SMTPServer
+var SMTPServer = require('../smtp-server/lib/smtp-server.js').SMTPServer
 var logger = require('./logger.js')
 var config = require('../config.js')
 var upstream = require('./upstream.js')
@@ -116,10 +116,9 @@ var server = new SMTPServer({
         stream.pipe(mailparser)
     },
     
-    onClose: function(session, callback){
+    onClose: function(session){
         if (session._upstream){
             session._upstream.close()
-            callback()
         }
     }
 });
