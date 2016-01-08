@@ -36,3 +36,5 @@ muttrc
     ...
 
 ```
+
+由于一些原因 我魔改了mailparser 把MIME中的fileName改成了filename
