@@ -5,6 +5,8 @@ smtp-proxy-proto
 #### install
 
 ```
+    git clone https://github.com/Fruneng/smtp-proxy-proto.git
+    git submodule update
     npm install
 ```
 
